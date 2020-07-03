@@ -1,0 +1,231 @@
+<html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta name="description" content="Alternative WhatsApp Client and WhatsApp API. --- offers solutions for businesses:
+          sending bulk WhatsApp messages - real time chat translation - autoresponder WhatsApp bot -
+          WhatsApp simultaneously on multiple devices with a single phone number.">
+    <meta name="keywords" content="whatsapp, whatsapp business, whatsapp client, whatsapp api, whatsapp developer,
+          whatsapp marketing, whatsapp bot, whatsapp chat translation, translate chat, chatbot,
+          whatsapp chatbot, whatsapp bulk messages, whatsapp multiple messages, whatsapp multiple user,
+          whatsapp multiple client, whatsapp multiple devices, whatsapp web, whatsapp web multiple pc">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous">
+
+    <!-- Material Design - Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous">
+
+
+    <!-- My custom styles -->
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact-us.css">
+
+    <title>
+        Home | Title
+    </title>
+<style></style><script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js"></script><script async="" src="https://static.hotjar.com/c/hotjar-1315345.js?sv=6"></script></head>
+<body>
+    <div class="body-container">
+
+
+        <!-- header -->
+
+        <header class="pg-header">
+            <div class="header">
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-1 text-white pt-1">
+                    <div class="container d-flex justify-content-center">
+                        <!-- brand -->
+                        <a class="navbar-brand" href="">
+                            <img src="assets/New Logo.png" class="img-fluid" width="80">
+                        </a>
+
+                        <!-- mobile collapse toggler -->
+                        <button class="navbar-toggler mt-2 ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- collapsible navbar -->
+                        <div class="collapse navbar-collapse flex-grow-0 mt-lg-2" id="navbarSupportedContent">
+                            <ul class="navbar-nav h-ul">
+                                <li class="nav-item nv-home func active" onclick="go_home()">
+                                    <a class="nav-link" href="" style="color: black;">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item nv-pricing">
+                                    <a class="nav-link" href="pricing.html">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item nv-features">
+                                    <a class="nav-link" href="features.html">
+                                        Features
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <section class="pg-form flex-fill d-flex align-items-center">
+            <div class="container">
+                <div class="row flex-lg-row-reverse">
+                    <!-- lateral image -->
+    
+                    <div class="col-lg text-center">
+                        <img src="assets/contact-us/contact-form.png" alt="Contact us WhatsApp chat bubbles" class="img-fluid lat-img">
+                    </div>
+    
+    
+                    <!-- msg + form -->
+    
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <div class="col-info-bd pt-3 pt-lg-0 text-center text-lg-left">
+                            <h2 class="font-weight-normal">
+                                Contact us
+                            </h2>
+    
+                            <p class="lead mb-0">
+                                Got a question? We'd love to hear from you. Send a message and we
+                                will reply
+                                <abbr class="text-decoration-none" title="As Soon As Possible">
+                                    ASAP
+                                </abbr>.
+                            </p>
+    
+                            <!-- form -->
+                            <form id="contact-form" class="form mx-auto mx-lg-0">
+                                <!-- email -->
+                                <div class="form-group">
+                                    <input id="form-email" class="form-control shadow-none" type="email" placeholder="Email" required="">
+                                </div>
+    
+                                <!-- msg -->
+                                <div class="form-group">
+                                    <textarea id="form-msg" class="form-control shadow-none" placeholder="Message" rows="3" required=""></textarea>
+                                </div>
+    
+                                <!-- submit -->
+                                <button type="submit" class="btn btn-success btn-0" id="bottone_richiesta">
+                                    Send your request
+                                </button>
+    
+                                <div class="alert alert-success" role="alert" id="alert_richiesta_ok" style="display: none;">
+                                    Request Send!
+                                </div>
+                                <div class="alert alert-danger" role="alert" id="alert_richiesta_ko" style="display: none;">
+                                    Error, try later...
+                                </div>
+                                <div class="text-center" id="loading_richiesta" style="display: none;">
+                                    <img src="../assets/loading.gif" class="img-fluid" alt="Responsive image">
+                                    <span>Request is being sent...</span>
+                                </div>
+    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+
+    <footer class="pg-footer">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <div class="sec legal">
+                    <div class="pb-1 pl-2">
+                        <img src="assets/New Logo.png" width="30">
+                    </div>
+                    <p class="disclaimer mb-2 mb-xl-3">
+                       Details
+                    </p>
+
+                    <ul class="list-unstyled mb-0">
+                        <li class="li">
+                            <a class="link" href="#">
+                                Terms of use
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--.legal-->
+
+
+                <div class="sec">
+                    <h6 class="title">
+                        Solutions
+                    </h6>
+
+                    <ul class="list-unstyled mb-0">
+                        <li class="li func" onclick="go_home()">
+                            <a class="link" href="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a class="link" href="features.html">
+                                Features
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a class="link" href="pricing.html">
+                                Pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div><!--.secs-->
+        </div><!--.container-->
+
+        <div id="whatsapp-div"></div>
+
+    </footer>
+
+
+    </div><!--.body-container-->
+
+
+
+    <!-- QUESTO SCRIPT E' PARTE DEL DOM, DEVE SEMPRE ESSERE CHIAMATO PRIMA DI TUTTI GLI ALTRI -->
+    <!--<script src="scripts/globalDOM.js"></script>-->
+
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-database.js"></script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+
+
+    <!-- My custom scripts -->
+    <script src="scripts/global.js"></script>
+    <script src="scripts/contact.js"></script>
+
+</body></html>

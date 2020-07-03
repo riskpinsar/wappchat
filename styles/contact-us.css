@@ -1,0 +1,64 @@
+
+body {
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+.pg-form {
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+.pg-form .lead {
+    line-height: 1.2;
+}
+
+.lat-img {
+    max-height: 300px;
+}
+
+.pg-form .col-info-bd {
+    max-width: 450px;
+}
+
+/* form */
+
+.pg-form .form {
+    margin-top: 40px;
+    max-width: 450px;
+}
+.pg-form .form-control {
+    background-color: var(--mercury-light);
+}
+
+
+@media (min-width: 576px) {
+    .pg-form {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pg-form {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .lat-img {
+        max-height: none;
+    }
+
+    .pg-form .col-info-bd {
+        max-width: none;
+    }
+}
+
+
+
+
