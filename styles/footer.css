@@ -1,0 +1,78 @@
+
+:root {
+    /* variables */
+
+    /* OLD colors*/
+    --green-1: #30cd89;
+    --green-2: #0ec44b;
+    --green-3: #25d366;
+    --green-4: #2ac40e;
+    --green-5: #00A550;
+
+
+
+    /* MOVED TO  global.css */
+
+    /* Mercury's official color palette */
+    --mercury-green-primary: #30cd89;
+    --mercury-green-gradient: #1fc89a;
+
+    --mercury-orange: #ffb229;
+    --mercury-yellow: #fede7f;
+
+    --mercury-light: #f4f8fb;
+    --mercury-blue-dark: #263d4a;
+}
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer.footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    background-color: var(--mercury-blue-dark);
+    color: #bbb;
+}
+
+footer.footer a {
+    color: #999;
+    text-decoration:none;
+}
+
+footer.footer a:hover, footer.footer a:focus {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer.footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+
+
+
+footer.footer .logo-lbl {
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    footer.footer .contact-us .label {
+        margin-right: 30px;
+    }
+}
+
+
+footer.footer .btn-mercury-light {
+    border-radius: 5px;
+    border-color: var(--mercury-light)!important;
+
+    background-color: var(--mercury-light)!important;
+}
+
+.mercury-orange-header {
+    color: var(--mercury-orange)!important;
+}
