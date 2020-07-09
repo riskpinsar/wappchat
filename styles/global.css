@@ -1,7 +1,7 @@
 :root {
     /* Mercury's official color palette */
-    --mercury-green-primary: #51c0af;
-    --mercury-green-gradient: #3b9e8f;
+    --mercury-green-primary: rgb(81, 192, 175);
+    --mercury-green-gradient: rgb(81, 192, 175);
 
     --mercury-orange: #3bc5ca;
     --mercury-yellow: #597c7e;
