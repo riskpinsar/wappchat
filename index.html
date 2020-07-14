@@ -96,7 +96,7 @@
             <div class="container position-relative">
                 <div class="text-white text-center pb-4" >
                     <h1 class="line-h-11 font-weight-normal mb-lg-3">
-                        Use Chatbot to simply your business
+                        Use Chatbots on WhatsApp to simplify your business
                     </h1>
                     <p class="line-h-14 mb-lg-4">
                         Chatbot works 24X7 without human interaction
@@ -400,6 +400,7 @@
                     </p>
                 </div>
 
+
                 <div class="boxes d-flex flex-wrap pt-1">
 
                     <div class="box-wrap">
@@ -479,14 +480,9 @@
                             </p>
                         </div>
                     </div>
+                    
 
-                    <div class="box-wrap">
-                        <div class="box">
-                            
-                        </div>
-                    </div>
-
-                    <div class="box-wrap">
+                    <div class="box-wrap number7">
                         <div class="box">
                             <img src="assets\Icons\global customer.png" alt="Global customers icon" class="pic">
 
@@ -512,7 +508,7 @@
                         </div>
                     </div>
 
-                    <div class="box-wrap">
+                    <div class="box-wrap number9">
                         <div class="box">
                             <img src="assets\Icons\news letter.png" alt="Newsletter icon" class="pic">
 
@@ -524,8 +520,9 @@
                             </p>
                         </div>
                     </div>
+                   
 
-                    <div class="box-wrap">
+                    <div class="box-wrap number10">
                         <div class="box">
                             <img src="assets\Icons\survey.png" alt="Estimates icon" class="pic">
 
@@ -541,9 +538,6 @@
                 </div><!--.boxes-->
             </div>
         </section>
-
-
-
 
         <!-- footer -->
 
@@ -629,5 +623,31 @@
     <!-- My custom scripts -->
     <script src="scripts/global.js"></script>
     <script src="scripts/index.js"></script>
+
+    <script>
+        window.setInterval(function(){
+            if($(window).width() > 750 && $(window).width() < 975){
+                $('.number7').css('margin-left', '0%');
+                $('.number9').css('margin-left', '0%');
+                $('.number10').css('margin-left', '33%');
+            }
+            else if($(window).width() < 750){
+                $('.number7').css('margin-left', '0%');
+                $('.number9').css('margin-left', '0%');
+                $('.number10').css('margin-left', '0%');
+            }   
+            else if($(window).width() > 975 && $(window).width() < 1182){
+                $('.number7').css('margin-left', '0%');
+                $('.number9').css('margin-left', '25%');
+                $('.number10').css('margin-left', '0%');
+            }    
+            else if($(window).width() > 1182){
+                $('.number7').css('margin-left', '16%');
+                $('.number9').css('margin-left', '0%');
+                $('.number10').css('margin-left', '0%');
+            }      
+        }, 500);
+    </script>
+
 
 </body></html>
