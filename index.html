@@ -33,7 +33,10 @@
     <title>
         Home | Title
     </title>
-<style></style><script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js"></script><script async="" src="https://static.hotjar.com/c/hotjar-1315345.js?sv=6"></script></head>
+<style>
+</style>
+<script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js">
+</script><script async="" src="https://static.hotjar.com/c/hotjar-1315345.js?sv=6"></script></head>
 <body>
     <div class="body-container">
 
@@ -104,15 +107,13 @@
                 </div>
 
                 <div class="embed-responsive embed-responsive-16by9 rounded">
-                    <!--<iframe src="https://www.youtube.com/embed/lmkJccZMHOs"
-                            class="embed-responsive-item" allowfullscreen></iframe>-->
-                    <img src="assets/New Logo.png" class="img-vid-rendering img-fluid">
 
                     <!-- NO Safari -->
                     <!-- w-100 d-block rounded shadow pev-none -->
-                    <video class="embed-responsive-item" autoplay="" muted="" loop="" controls="" __idm_id__="732605441">
+                    <video class="embed-responsive-item custom_width"  autoplay="" muted="" loop="" controls="" __idm_id__="732605441">
                         <source src="assets/Videos/Index.mp4" type="video/mp4">
                     </video>
+                    
                 </div>
             </div>
         </section>
@@ -646,7 +647,17 @@
                 $('.number7').css('margin-left', '16%');
                 $('.number9').css('margin-left', '0%');
                 $('.number10').css('margin-left', '0%');
-            }      
+            }  
+
+            //console.log($(window).width())
+            //if($(window).width() > 1000){
+                $('.custom_width').css('width','57%');
+                $('.custom_width').css('margin-left','21%');
+            //}
+            //else{
+            //    $('.custom_width').css('width','100%');
+            //    $('.custom_width').css('margin-left','0%');
+            //}
         }, 500);
     </script>
 
